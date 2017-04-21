@@ -3,24 +3,61 @@
 @import './core/css/common';
 @import './core/css/logo';
 
-// @import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,500,800');
 
-body, html{
+body,
+html,
+.ng-scope{
+  font-family: 'Dosis', sans-serif;
   height: 100%;
 }
+.vcenter{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+      -ms-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+.glyphicon{
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
 
-.glyphicon {
-    display: inline-block;
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.glyphicon-chevron-left:before {
-  content: "\f053";
+.glyphicon-chevron-left:before{
+  content: '\f053';
 }
-.glyphicon-chevron-right:before {
-  content: "\f054";
+.glyphicon-chevron-right:before{
+  content: '\f054';
+}
+#landing{
+  background: url('./core/img/bg.jpg') center center;
+  background-size: cover;
+  h1{
+    font-size: 8em;
+    color: #fff;
+    span{
+      font-weight: 300;
+    }
+    strong{
+      font-weight: 800;
+    }
+  }
+  .contact{
+    margin-left: 20px;
+    p{
+      font-size: 20px;
+      font-weight: 300;
+      margin: 0;
+      color: #fff;
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
 }
